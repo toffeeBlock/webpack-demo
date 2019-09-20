@@ -1,0 +1,16 @@
+{
+  "name": "min-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "minpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^1.2.3",
+    "tapable": "^1.1.3"
+  }
+}

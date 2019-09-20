@@ -1,0 +1,28 @@
+(function(modules) {
+
+  function __webpack_require__(moduleId) {
+
+    const module = {
+      i: moduleId,
+      l: false,
+      exports: {}
+    }
+
+    modules[moduleId].call(module.exports, module, module.exports, __webpack_require__)
+
+    return module.exports
+
+  }
+
+  return __webpack_require__(__webpack_require__.s = "<%- entry %>")
+
+})({
+  <% for(let k in modules) { %>
+    '<%- k %>':
+    (
+      function(module, exports, __webpack_require__) {
+        eval(`<%- modules[k] %>`)
+      }
+    ),
+  <% } %>
+})
